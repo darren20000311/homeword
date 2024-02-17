@@ -1,0 +1,52 @@
+Q1. In Listing 5.4 (addnonnegatives.py) could the condition of the if statement have used > instead of
+= and achieved the same results? Why?
+
+A1.Yes! If we remove the equal sign in the if loop, the result will be the same.
+Because we will only ends the code if we enter negative numbers.
+Therefore, 0 will not change the result.
+
+Q2. In Listing 5.4 (addnonnegatives.py) could the condition of the while statement have used > instead
+of >= and achieved the same results? Why?
+A2. It will not ends in the same result, this is because we initialize entry to be 0 at first.
+Therefore, if we remove the equal sign in the while loop, we will never enter the loop. 
+We will just print out the sum, which is 0.
+
+Q3. In Listing 5.4 (addnonnegatives.py) what would happen if the statement
+entry = int(input()) # Get the value
+were moved out of the loop? Is moving the assignment out of the loop a good or bad thing to do?
+Why?
+A3.It is a bad thing! Because when the user moves entry = int(input()) out of the loop,
+the number the user enter will be included in the result whether the number is positive or negative.
+Since we only want the positive number, it is a bad thing to move entry = int(input()) out of the loop.
+
+Q4. How many asterisks does the following code fragment print?
+a = 0
+while a < 100:
+    print('*', end='')
+    a += 1
+print()
+A4. 100. Because when a is less than 100 it will add one * until a become 100.
+
+Q5. How many asterisks does the following code fragment print?
+a = 0
+    while a < 100:
+    print('*', end='')
+print()
+A5. Infinite. Because a will always be 0. Which means a will always less than 100, 
+and it will print * again and again.
+
+Q13. Provide the exact sequence of integers specified by each of the following range expressions.
+(a) range(5)
+(b) range(5, 10)
+(c) range(5, 20, 3)
+(d) range(20, 5, -1)
+(e) range(20, 5, -3)
+(f) range(10, 5)
+(g) range(0)
+(h) range(10, 101, 10)
+(i) range(10, -1, -1)
+(j) range(-3, 4)
+(k) range(0, 10, 1)
+A13. (a)=0,1,2,3,4. (b)=5,6,7,8,9. (c)=5,8,11,14,17. (d)=20,19,18,17,16,15,14,13,12,11,10,9,8,7,6
+(e)=20,17,14,11,8. (f)nothing. (g)nothing. (h)=10,20,30,40,50,60,70,80,90,100. (i)10,9,8,7,6,5,4,3,2,1,0
+(j)=-3,-2,-1,0,1,2,3. (k)=0,1,2,3,4,5,6,7,8,9
