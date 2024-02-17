@@ -1,0 +1,19 @@
+1.  Did you attempt to make your computer player very smart -- i.e., 
+    do something more clever than just pick a random legal move?
+    My AI makes moves randomly. To make it smarter,
+    I should enhance the logic of the AI to evaluate
+    the game state and select moves based on certain strategies.
+
+2.  How did you determine which piece to play next? Tell us about your “pick next move” algorithm.
+    MMy AI uses random moves. It randomly selects a position to place its piece.
+    To improve this, I need to implement more sophisticated algorithms.
+
+3.  How often did your computer program beat you, or your friends, or whoever tested it out for you?
+    Almost every time human can win the game.
+
+4.  How easy would it be to make the difficulty level adjustable?
+    Difficulty level adjustment is not currently implemented.
+
+5.  How would you improve it in the future?
+    It is very easy for human to win the game.
+    Therefore, I think the computer's move should be more sophisticated to beat the human.
