@@ -1,0 +1,31 @@
+	•	What data structures you’ll need (lists, dictionaries, etc.)
+	    I used lists to record all stones which placed on the board and record the two players.
+
+	•	What classes you’ll define
+        I defined two classes, one is board, which includes 3 methods, display(), 
+        is_occupied(), and record_location().
+        The second class I defined is stone, which includes 2 methods, 
+        one is get_location(), and the other one is display().
+
+	•	What functions you’ll need (methods within classes, 
+        or other functions that exist outside of any class)
+        I’ll need setup(), draw(), mousePressed(), 
+        is_occupied(), record_location(), display(), and then get_location().
+
+	•	A short description of each class and function/method
+        class board includes three methods, display() is to display the board, 
+        is_occupied() is to check whether a position is occupied, 
+        record_location() is to record stones location.
+        And class stone includes two methods, 
+        get_location is to return two different colors of stone’s location, 
+        and display() is to display the stones.
+
+	•	A bullet-pointed pseudocode of your driver: Tell us about the flow of control, 
+        and think about the following cases: 
+		First, we create Board object, and create empty stones list. 
+		And I initialized current_player to ‘black’. 
+		Second, here is the main game loop: 
+        If current_player is ‘black’: -> create stone object -> Add to stone list -> Draw stone 
+        -> Switch current_player to ‘white’. 
+		And if current_player is ‘white’: same as above, switch current_player to ‘black’. 
+		Finally, check whether the board is full, if full print ‘Game over!!’.

@@ -1,0 +1,33 @@
+mousePressed()
+Valid input: coordinates of empty position
+Invalid input: place the stone in the wrong position
+
+Board.init()
+Valid input: correct size, divider count
+Invalid input: wrong size and wrong divider of the board
+
+Board.is_occupied()
+Valid input: coordinates of occupied and empty positions on board
+Invalid input: happens any errors
+
+Board.record_location()
+Valid input: correctly return postion in the board
+Invalid input: happens any errors
+
+Board.display()
+Valid input: correctly draw the board
+Invalid input: fail to draw the board
+
+Stone.init()
+Valid input: valid coordinates and color
+Invalid input: Invalid coordinates and color
+
+Stone.get_location()
+Valid input: return the correct position of x and y
+Invalid input: return can't get the location
+
+Stone.display()
+valid input: display the stone
+Invalid input: wrong color
+
+
