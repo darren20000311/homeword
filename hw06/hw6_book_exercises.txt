@@ -1,0 +1,93 @@
+1. Is the following a legal Python program?
+def proc(x):
+    return x + 2
+def proc(n):
+    return 2*n + 1
+def main():
+    x = proc(5)
+main()
+A: Yes, it is. But it will not work.
+
+2. Is the following a legal Python program?
+def proc(x):
+    return x + 2
+def main():
+    x = proc(5)
+    y = proc(4)
+main()
+A: Yes, it is. But it will not produce any output.
+
+3. Is the following a legal Python program?
+def proc(x):
+    print(x + 2)
+def main():
+    x = proc(5)
+main()
+A: Yes, it is. And it will output 7.
+
+
+4. Is the following a legal Python program?
+def proc(x, y):
+    return 2*x + y*y
+def main():
+    print(proc(5, 4))
+
+main()
+A: Yes, it is. And it will output 26.
+
+
+5. Is the following a legal Python program?
+def proc(x, y):
+    return 2*x + y*y
+def main():
+    print(proc(5))
+main()
+A: No, it is not. Since it miss one required argument.
+
+
+6. Is the following a legal Python program?
+def proc(x):
+    return 2*x
+def main():
+    print(proc(5, 4))
+main()
+A: No, it is not. This program only need one argument, but there are two.
+
+7. Is the following a legal Python program?
+def proc(x):
+    print(2*x*x)
+def main():
+    proc(5)
+main()
+A: Yes, it is. And the output is 50.
+
+8. The programmer was expecting the following program to print 200. What does it print instead? Why does it print what it does?
+def proc(x):
+    x = 2*x*x
+def main():
+    num = 10
+    proc(num)
+    print(num)
+main()
+A: It will output 10, since is a local variable, and it will not affect the num variable.
+
+9. Is the following program legal since the variable x is used in two different places (proc and main)?
+Why or why not?
+def proc(x):
+    return 2*x*x
+def main():
+    x = 10
+    print(proc(x))
+main()
+A: Yes, it is legal. Because both x are in different scopes, and they will not conflict each other,
+   but in main, it calls proc. Therefore, it will output 200.
+
+10. Is the following program legal since the actual parameter has a different name from the formal pa- rameter (y vs. x)? Why or why not?
+def proc(x):
+    return 2*x*x
+def main():
+    y = 10
+    print(proc(y))
+main()
+A: It is legal, and it will output 200. 
+This is because Python binds the argument values to the function's formal parameters based on their positions and not their names.
